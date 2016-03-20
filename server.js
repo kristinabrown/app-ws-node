@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 
 var port = process.env.PORT || 3001;
 
-var redisURL = url.parse("redis://h:p9v4fauri1k5e4o86j8j3udnq3@ec2-54-225-206-173.compute-1.amazonaws.com:13049");
+var redisURL = url.parse("redis://h:pebpcfbicj47q63k6m4i5c8iouj@ec2-54-235-164-4.compute-1.amazonaws.com:9849");
 
 var redisClient = redis.createClient(redisURL.port, redisURL.hostname);
 redisClient.auth(redisURL.auth.split(":")[1]);
