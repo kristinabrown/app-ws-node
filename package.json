@@ -1,0 +1,16 @@
+{
+  "name": "app-ws-node",
+  "version": "1.0.0",
+  "description": "node app to aide with pub/sub",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kristina Brown",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "redis": "^2.5.2",
+    "socket.io": "^1.4.5"
+  }
+}
