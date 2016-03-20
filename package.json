@@ -2,13 +2,20 @@
   "name": "app-ws-node",
   "version": "1.0.0",
   "description": "node app to aide with pub/sub",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server.js",
+    "web": "node server.js"
   },
   "author": "Kristina Brown",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.13.4",
+    "redis": "^2.5.2",
+    "socket.io": "^1.4.5"
+  },
+  "dependencies": {
     "express": "^4.13.4",
     "redis": "^2.5.2",
     "socket.io": "^1.4.5"
