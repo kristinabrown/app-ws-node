@@ -5,6 +5,11 @@ const redis    = require('redis');
 var url        = require('url');
 const app      = express();
 
+app.set('view engine', 'jade');
+
+app.get('/', function (req, res) {
+  res.render('index', { message: 'you can do this!'});
+});
 
 var port = process.env.PORT || 3001;
 
