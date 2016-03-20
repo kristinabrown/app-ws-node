@@ -39,7 +39,9 @@ redisClient.subscribe('update');
 io.on('connection', function(socket){
 
   redisClient.on('message', function(channel, message){
-    io.sockets.emit('message', message)
+    if (message !== 'do not listen') {
+      io.sockets.emit('message', message)
+    }
   });
 
 });
